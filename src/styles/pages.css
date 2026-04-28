@@ -1,0 +1,98 @@
+/* Landing page */
+.hero {
+  background:
+    radial-gradient(1200px 500px at 80% -10%, rgba(99, 102, 241, 0.18), transparent 60%),
+    radial-gradient(900px 400px at 0% 20%, rgba(14, 165, 164, 0.18), transparent 60%),
+    var(--bg);
+  padding: var(--space-16) 0 var(--space-12);
+  border-bottom: 1px solid var(--border);
+}
+
+.hero-inner { text-align: center; }
+
+.hero-title {
+  margin: var(--space-4) 0 var(--space-3);
+  letter-spacing: -0.02em;
+}
+
+.hero-sub {
+  max-width: 60ch;
+  margin: 0 auto var(--space-6);
+  color: var(--text-muted);
+  font-size: 1.125rem;
+}
+
+.hero-actions {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  justify-content: center;
+}
+
+.hero-note {
+  margin-top: var(--space-5);
+  color: var(--text-soft);
+  font-size: 0.9rem;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--space-5);
+}
+
+.feature-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.feature-icon {
+  font-size: 1.75rem;
+  margin-bottom: var(--space-3);
+}
+
+.feature-title { margin-bottom: var(--space-2); }
+.feature-body { color: var(--text-muted); margin: 0; }
+
+.cta-card {
+  background: linear-gradient(135deg, var(--brand-600), var(--accent-500));
+  color: #fff;
+  border-radius: var(--radius-xl);
+  padding: var(--space-10);
+  text-align: center;
+  box-shadow: var(--shadow-lg);
+}
+
+.cta-card h2 { color: #fff; }
+.cta-card p { color: rgba(255, 255, 255, 0.85); margin-bottom: var(--space-6); }
+
+.cta-actions {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  justify-content: center;
+}
+
+.cta-card .btn-primary {
+  background: #fff;
+  color: var(--brand-700);
+}
+.cta-card .btn-primary:hover { background: var(--brand-50); color: var(--brand-700); }
+.cta-card .btn-ghost {
+  background: transparent;
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.5);
+}
+.cta-card .btn-ghost:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
