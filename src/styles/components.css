@@ -176,3 +176,82 @@
   padding: var(--space-6);
   box-shadow: var(--shadow-sm);
 }
+
+/* Risk badges */
+.risk-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  border: 1px solid transparent;
+}
+
+.risk-badge.is-compact {
+  padding: 2px 8px;
+  font-size: 0.75rem;
+}
+
+.risk-badge-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: currentColor;
+  opacity: 0.85;
+}
+
+.risk-badge-score {
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+  background: rgba(255, 255, 255, 0.65);
+  padding: 1px 6px;
+  border-radius: 999px;
+  font-size: 0.78rem;
+}
+
+.risk-badge-success {
+  background: var(--success-bg);
+  color: #166534;
+  border-color: #86efac;
+}
+
+.risk-badge-info {
+  background: var(--info-bg);
+  color: #075985;
+  border-color: #7dd3fc;
+}
+
+.risk-badge-warning {
+  background: var(--warning-bg);
+  color: #92400e;
+  border-color: #fcd34d;
+}
+
+.risk-badge-danger {
+  background: var(--danger-bg);
+  color: #991b1b;
+  border-color: #fca5a5;
+}
+
+/* Coin glyph */
+.coin-glyph {
+  display: inline-grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.78rem;
+  letter-spacing: 0.02em;
+  flex-shrink: 0;
+}
+
+.coin-glyph.lg {
+  width: 48px;
+  height: 48px;
+  font-size: 0.9rem;
+}
