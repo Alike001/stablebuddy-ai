@@ -255,3 +255,69 @@
   height: 48px;
   font-size: 0.9rem;
 }
+
+/* Empty state */
+.empty-state {
+  text-align: center;
+  padding: var(--space-8) var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  align-items: center;
+}
+
+.empty-state-icon {
+  font-size: 2.25rem;
+  margin-bottom: var(--space-2);
+}
+
+.empty-state-title { margin: 0; }
+.empty-state-body {
+  color: var(--text-muted);
+  max-width: 50ch;
+  margin: 0 0 var(--space-3);
+}
+
+/* Small button variant */
+.btn-sm {
+  padding: 6px 12px;
+  font-size: 0.85rem;
+}
+
+.muted-link {
+  color: var(--text-muted);
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+.muted-link:hover { color: var(--brand-700); }
+
+.small { font-size: 0.85rem; }
+
+/* Chart tooltip (used by Recharts custom tooltips) */
+.chart-tooltip {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 8px 12px;
+  box-shadow: var(--shadow-md);
+  font-size: 0.9rem;
+}
+
+.chart-tooltip-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 2px;
+}
+
+.chart-tooltip-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+}
+
+.chart-tooltip-meta {
+  font-variant-numeric: tabular-nums;
+}
+
+.chart-tooltip-meta.soft { color: var(--text-soft); font-size: 0.8rem; }

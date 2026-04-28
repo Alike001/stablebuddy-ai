@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar.jsx'
 import Footer from './components/Footer.jsx'
 import Landing from './pages/Landing.jsx'
+import Dashboard from './pages/Dashboard.jsx'
 
 function Placeholder({ title }) {
   return (
@@ -19,7 +20,7 @@ export default function App() {
       <main className="app-main">
         <Routes>
           <Route path="/" element={<Landing />} />
-          <Route path="/dashboard" element={<Placeholder title="Dashboard" />} />
+          <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/compare" element={<Placeholder title="Compare stablecoins" />} />
           <Route path="/compare/:id" element={<Placeholder title="Coin detail" />} />
           <Route path="/send" element={<Placeholder title="Send / Pay" />} />
