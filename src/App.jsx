@@ -3,6 +3,8 @@ import Navbar from './components/Navbar.jsx'
 import Footer from './components/Footer.jsx'
 import Landing from './pages/Landing.jsx'
 import Dashboard from './pages/Dashboard.jsx'
+import Compare from './pages/Compare.jsx'
+import CoinDetail from './pages/CoinDetail.jsx'
 
 function Placeholder({ title }) {
   return (
@@ -21,8 +23,8 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/compare" element={<Placeholder title="Compare stablecoins" />} />
-          <Route path="/compare/:id" element={<Placeholder title="Coin detail" />} />
+          <Route path="/compare" element={<Compare />} />
+          <Route path="/compare/:id" element={<CoinDetail />} />
           <Route path="/send" element={<Placeholder title="Send / Pay" />} />
           <Route path="/invoice" element={<Placeholder title="Invoice generator" />} />
           <Route path="/invoice/pay" element={<Placeholder title="Pay invoice" />} />

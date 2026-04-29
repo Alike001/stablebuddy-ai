@@ -321,3 +321,77 @@
 }
 
 .chart-tooltip-meta.soft { color: var(--text-soft); font-size: 0.8rem; }
+
+/* Risk meter (5-axis breakdown) */
+.risk-meter {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.risk-meter-row {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.risk-meter-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-2);
+}
+
+.risk-meter-label {
+  font-weight: 600;
+}
+
+.risk-meter-score {
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.risk-meter-track {
+  height: 8px;
+  border-radius: 999px;
+  background: var(--surface-2);
+  overflow: hidden;
+}
+
+.risk-meter-fill {
+  height: 100%;
+  border-radius: 999px;
+  transition: width 0.25s ease;
+}
+
+.risk-meter-detail {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-2);
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.risk-meter-weight {
+  color: var(--text-soft);
+  font-variant-numeric: tabular-nums;
+}
+
+.risk-meter-why {
+  margin: 2px 0 0;
+  color: var(--text-soft);
+  font-size: 0.85rem;
+}
+
+/* Peg chart */
+.peg-chart {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.peg-chart-note { margin: 0; }
