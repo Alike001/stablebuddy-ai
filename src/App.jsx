@@ -10,6 +10,7 @@ import Invoice from './pages/Invoice.jsx'
 import PayInvoice from './pages/PayInvoice.jsx'
 import Assistant from './pages/Assistant.jsx'
 import Risk from './pages/Risk.jsx'
+import History from './pages/History.jsx'
 
 function Placeholder({ title }) {
   return (
@@ -35,7 +36,7 @@ export default function App() {
           <Route path="/invoice/pay" element={<PayInvoice />} />
           <Route path="/assistant" element={<Assistant />} />
           <Route path="/risk" element={<Risk />} />
-          <Route path="/history" element={<Placeholder title="Transaction history" />} />
+          <Route path="/history" element={<History />} />
           <Route path="*" element={<Placeholder title="Page not found" />} />
         </Routes>
       </main>
