@@ -5,6 +5,7 @@ import Landing from './pages/Landing.jsx'
 import Dashboard from './pages/Dashboard.jsx'
 import Compare from './pages/Compare.jsx'
 import CoinDetail from './pages/CoinDetail.jsx'
+import Send from './pages/Send.jsx'
 
 function Placeholder({ title }) {
   return (
@@ -25,7 +26,7 @@ export default function App() {
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/compare" element={<Compare />} />
           <Route path="/compare/:id" element={<CoinDetail />} />
-          <Route path="/send" element={<Placeholder title="Send / Pay" />} />
+          <Route path="/send" element={<Send />} />
           <Route path="/invoice" element={<Placeholder title="Invoice generator" />} />
           <Route path="/invoice/pay" element={<Placeholder title="Pay invoice" />} />
           <Route path="/assistant" element={<Placeholder title="AI assistant" />} />
