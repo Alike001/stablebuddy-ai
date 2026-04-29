@@ -8,6 +8,7 @@ import CoinDetail from './pages/CoinDetail.jsx'
 import Send from './pages/Send.jsx'
 import Invoice from './pages/Invoice.jsx'
 import PayInvoice from './pages/PayInvoice.jsx'
+import Assistant from './pages/Assistant.jsx'
 
 function Placeholder({ title }) {
   return (
@@ -31,7 +32,7 @@ export default function App() {
           <Route path="/send" element={<Send />} />
           <Route path="/invoice" element={<Invoice />} />
           <Route path="/invoice/pay" element={<PayInvoice />} />
-          <Route path="/assistant" element={<Placeholder title="AI assistant" />} />
+          <Route path="/assistant" element={<Assistant />} />
           <Route path="/risk" element={<Placeholder title="Risk checker" />} />
           <Route path="/history" element={<Placeholder title="Transaction history" />} />
           <Route path="*" element={<Placeholder title="Page not found" />} />
