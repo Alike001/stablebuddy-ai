@@ -1358,3 +1358,220 @@
 .chat-input { flex: 1; }
 
 .assistant-foot { margin: 0; }
+
+/* Risk page */
+.risk-page {
+  padding-bottom: var(--space-12);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.risk-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.risk-inspect {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.risk-inspect-head {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: var(--space-5);
+  align-items: center;
+}
+
+@media (max-width: 880px) {
+  .risk-inspect-head {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+}
+
+.risk-coin-picker {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.risk-coin-picker-label { font-weight: 600; }
+
+.risk-inspect-meta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.risk-inspect-name {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.risk-inspect-score {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+}
+
+@media (max-width: 880px) {
+  .risk-inspect-score { align-items: flex-start; }
+}
+
+.risk-inspect-score-num {
+  font-size: 2.4rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+}
+
+.risk-inspect-score-suffix {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  font-weight: 600;
+  margin-left: 4px;
+}
+
+.risk-explain {
+  margin: 0;
+  padding: var(--space-3);
+  background: var(--surface-2);
+  border-radius: var(--radius-md);
+}
+
+/* Rule tables */
+.risk-rules { display: flex; flex-direction: column; gap: var(--space-4); }
+
+.risk-rules-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+}
+
+.risk-rules-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-4);
+}
+
+@media (max-width: 880px) {
+  .risk-rules-grid { grid-template-columns: 1fr; }
+}
+
+.rule-card { padding: var(--space-4); }
+
+.rule-title {
+  margin: 0 0 var(--space-3);
+  font-size: 1rem;
+}
+
+.rule-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.rule-row {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-md);
+  border: 1px solid transparent;
+  transition: background 0.12s ease, border-color 0.12s ease;
+}
+
+.rule-row:hover { background: var(--surface-2); }
+
+.rule-row.is-active {
+  background: var(--brand-50);
+  border-color: var(--brand-300);
+}
+
+.rule-row-main {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-3);
+}
+
+.rule-score {
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--brand-700);
+  min-width: 32px;
+}
+
+.rule-row.is-active .rule-score { color: var(--brand-700); }
+
+.rule-label { font-weight: 500; }
+
+.rule-why { display: block; }
+
+/* Hypothetical builder */
+.risk-hypothetical {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.risk-hypo-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+}
+
+.risk-hypo-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: var(--space-5);
+  align-items: start;
+}
+
+@media (max-width: 880px) {
+  .risk-hypo-grid { grid-template-columns: 1fr; }
+}
+
+.risk-hypo-controls {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.risk-hypo-result {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-4);
+  background: var(--surface-2);
+  border-radius: var(--radius-lg);
+}
+
+.risk-hypo-score-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+
+.risk-slider {
+  width: 100%;
+  margin-top: 4px;
+}
+
+.risk-slider:focus { outline: 2px solid var(--brand-300); }
