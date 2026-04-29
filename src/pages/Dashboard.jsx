@@ -12,6 +12,7 @@ import {
 import HoldingsDonut from '../components/HoldingsDonut.jsx'
 import CoinGlyph from '../components/CoinGlyph.jsx'
 import EmptyState from '../components/EmptyState.jsx'
+import PriceStatus from '../components/PriceStatus.jsx'
 
 function priceFor(coin, livePrices) {
   if (!coin) return 0
@@ -98,6 +99,7 @@ export default function Dashboard() {
                 <div>
                   <div className="muted small">Total balance</div>
                   <div className="dash-balance-value">{formatUsd(totalValue)}</div>
+                  <PriceStatus />
                 </div>
                 <Link to="/compare" className="btn btn-ghost btn-sm">
                   Compare coins

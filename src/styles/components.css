@@ -395,3 +395,65 @@
 }
 
 .peg-chart-note { margin: 0; }
+
+/* Price status (live CoinGecko prices) */
+.price-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 6px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+}
+
+.price-status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  flex-shrink: 0;
+}
+
+.price-status-dot.is-live {
+  background: var(--success);
+  box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.18);
+}
+.price-status-dot.is-busy {
+  background: var(--brand-500);
+  animation: price-pulse 1.2s ease-in-out infinite;
+}
+.price-status-dot.is-error { background: var(--danger); }
+.price-status-dot.is-fallback { background: var(--text-soft); }
+
+@keyframes price-pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(0.8); }
+}
+
+.price-status-text { line-height: 1; }
+
+.price-status-refresh {
+  background: transparent;
+  border: 0;
+  width: 22px;
+  height: 22px;
+  border-radius: 999px;
+  color: var(--brand-700);
+  font-size: 0.95rem;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  transition: background 0.12s ease, transform 0.4s ease;
+}
+
+.price-status-refresh:hover { background: var(--brand-50); }
+.price-status-refresh:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+  animation: price-spin 1s linear infinite;
+}
+
+@keyframes price-spin {
+  to { transform: rotate(360deg); }
+}
